@@ -1,0 +1,59 @@
+* {
+	margin: 10px;
+}
+
+body {
+	align-content: center;
+	margin: 6% 0px 0px 0px !important;
+}
+
+/*align form to center of the page*/
+form {
+	margin: 0 auto !important;
+	width: 40%;
+	min-height: 500px;		/* shift header to bottom */
+}
+
+fieldset {
+	border-radius: 10px;
+	min-width: 200px;
+	width: 100%;		/*use all of the form width in fieldset*/
+	text-align: center;
+}
+
+div {
+	margin: 20px;
+	width: 100%;
+}
+
+input {
+	height: 2.0em;
+	padding: 3px;
+	border-radius: 5px;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+legend {
+	text-align: left;
+}
+
+/*resize the button for appearance*/
+.button {
+	padding: 10px;
+	height: 35px;
+	width: 70px;
+}
+
+footer {
+	margin: 0px !important;
+	height: 175px;
+	width: 100%;
+	background-color: #9ba;
+	overflow: hidden;
+}
+
+footer>object {
+	height: 100%;
+	width: 100%;
+}
