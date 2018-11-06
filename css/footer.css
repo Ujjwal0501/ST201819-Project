@@ -1,0 +1,24 @@
+/*
+this file is not used anywhere
+the properties have been embedded into footer.html	*/
+
+body {
+	display: block;
+	overflow: hidden;
+}
+
+.desc {
+	float: left;
+	width: 50%;
+	height: inherit;
+	overflow: hidden;
+	/*background-color: #000000;*/
+}
+
+.dev-team {
+	float: left;
+	width: 50%;
+	height: inherit;
+	overflow: hidden;
+	/*background: blue;*/
+}

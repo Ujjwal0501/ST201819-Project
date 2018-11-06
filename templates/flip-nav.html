@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		a {
+			color: #4a90e2;
+			text-decoration: none;	 /* remove text underline */
+		}
+
+		a:hover {
+			/*color: #f15791;*/
+			color: #0650a0;		/* darker color on hover */
+		}
+
+		body {
+			overflow: hidden;
+		}
+		/*
+		.site-name {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 2.5em;
+		}*/
+
+		header {
+			width: 80%;
+			margin: auto;
+		}
+
+		nav {
+			font-family: serif;
+			font-weight: 700;
+			line-height: 1.75em;
+			width: 100%;		/* occupy all of header width */
+			float: left;
+			margin: auto;
+			font-size: 19px;
+			/*background-color: #acb*/
+			/*background-image: linear-gradient(-143deg, #FA61C2 0%, #F76B1C 100%);*/
+		}
+
+		.nav-element {
+			float: left;		/* stack nav-links from left */
+			width: 20%;			/* divide nav width into 5 parts */
+		}
+
+		.card-holder {
+		  position: relative;
+		  height: 3.5em;
+		  background-color: #acb;
+		  vertical-align: middle;
+		}
+
+		.card-holder:hover .card.-front {
+		  transform: rotateY(-0.5turn);
+		}
+
+		.card-holder:hover .card.-back {
+		  transform: rotateY(0turn);
+		  background-color: #9ba;
+		  /*background-image: linear-gradient(-144deg, #6AEEC6 0%, #698D28 100%);*/
+		}
+
+		.card {
+		  position: absolute;
+		  transition: transform 0.5s ease;
+		  backface-visibility: hidden;
+		  width: 100%;					/* occupy all of 1/5 part of each nav-link, provides good alignment */
+		  background-color: #acb;
+		}
+
+		.-flipped {
+		  transform: rotateY(0.5turn);
+		}
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<!-- <link href="./css/main.css" rel="stylesheet" type="text/css"> -->
+	<!-- <title>ST201819-Project | Ujjwal | Kshitij</title> -->
+</head>
+<body align="center">
+		<header>
+			<!-- <h1 class="site-name">Property Seller & Lister</h1> -->
+			<nav>
+				<div class="card-holder nav-element home">
+					<div class="card -orange">
+						<p class="card--text">Home</p>
+					</div>
+				</div>
+				<a href="../webpages/allproperty.html">
+					<div class="card-holder nav-element listings">
+						<div class="card -small -back -flipped">
+							<p class="card--text">Show All Listings</p>
+						</div>
+						<div class="card -small -front -orange">
+							<p class="card--text">All Listings</p>
+						</div>
+					</div></a> 
+				<a href="../webpages/soldout.html"> 
+					<div class="card-holder nav-element sold">
+						<div class="card -small -back -flipped">
+							<p class="card--text">Show sold out property</p>
+						</div>
+						<div class="card -small -front -orange">
+							<p class="card--text">Sold out Property</p>
+						</div>
+					</div></a>
+				<a href="../webpages/available.html">
+					<div class="card-holder nav-element onlist">
+						<div class="card -small -back -flipped">
+							<p class="card--text">Show On the List</p>
+						</div>
+						<div class="card -small -front -orange">
+							<p class="card--text">On the List</p>
+						</div>
+					</div></a>
+				<a href="../webpages/login.html">
+					<div class="card-holder nav-element login">
+						<div class="card -small -back -flipped">
+							<p class="card--text">Go for Login</p>
+						</div>
+						<div class="card -small -front -orange">
+							<p class="card--text">Login</p>
+						</div>
+					</div></a>
+			</nav>
+		</header>
+</body>
+</html>
