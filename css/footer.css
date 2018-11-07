@@ -1,24 +1,20 @@
-/*
-this file is not used anywhere
-the properties have been embedded into footer.html	*/
 
-body {
-	display: block;
+div {
+	margin: 20px;
+	width: 100%;
+}
+
+footer {
+	position: absolute;			/*keep footer to the bottom of page*/
+	bottom: -150px;
+	margin: 3px -3px !important;
+	height: 175px;
+	width: 99%;
+	background-color: #9ba;
 	overflow: hidden;
 }
 
-.desc {
-	float: left;
-	width: 50%;
-	height: inherit;
-	overflow: hidden;
-	/*background-color: #000000;*/
-}
-
-.dev-team {
-	float: left;
-	width: 50%;
-	height: inherit;
-	overflow: hidden;
-	/*background: blue;*/
+footer>object {
+	height: 100%;
+	width: 100%;
 }

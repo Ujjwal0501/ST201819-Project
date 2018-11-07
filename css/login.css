@@ -44,16 +44,3 @@ legend {
 	height: 35px;
 	width: 70px;
 }
-
-footer {
-	margin: 0px !important;
-	height: 175px;
-	width: 100%;
-	background-color: #9ba;
-	overflow: hidden;
-}
-
-footer>object {
-	height: 100%;
-	width: 100%;
-}
