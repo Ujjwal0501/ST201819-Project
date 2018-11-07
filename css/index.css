@@ -1,3 +1,8 @@
 .home>.card {
 	background-color: #9ba;
 }
+
+.main-content>object {
+	height: 100%;
+	width: 100%;
+}
