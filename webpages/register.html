@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../js/register.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<title>ST201819 - Register</title>
+</head>
+<body>
+	<form action="./login.html" target="_top">
+			<fieldset>
+				<legend>Registration Details</legend>
+				<div>
+					<label for="full-name">Full Name:</label>
+					<input type="text" name="user-name" placeholder="Full Name" required autofocus>
+				</div>
+
+				<div>
+					<label for="user-name">Username:</label>
+					<input type="text" name="user-name" placeholder="Username" required>
+				</div>
+
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" name="password" placeholder="Password" required>
+				</div>
+
+				<div>
+					<input class="button" type="submit" name="login" value="Register" onclick="local_registration()">
+				</div>
+				<div>
+					<p><a href="./login.html">Already registered? Login Here.</a></p>
+				</div>
+			</fieldset>
+		</form>
+		<footer>
+			<object data="../templates/footer.html"></object>
+		</footer>
+</body>
+</html>
