@@ -7,8 +7,13 @@ function show_detail () {
 }
 
 function buy_local (propertyid) {
-	sessionStorage[propertyid] = "sold";
-	alert("You have successfully bought the property with ID = "+propertyid);
+	if (sessionStorage["admin"] != "loggedin" && sessionStorage["user"] != "loggedin") {
+		alert("You are not logged in!!\nThis feature requires a login account.");
+	}
+	else {
+		sessionStorage[propertyid] = "sold";
+		alert("You have successfully bought the property with ID = "+propertyid);
+	}
 }
 
 function hide_sold () {
