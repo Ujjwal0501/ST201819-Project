@@ -8,12 +8,18 @@
 			background-color: #cacaca;
 		}
 	</style>
+	<script type="text/javascript">
+		if (sessionStorage["admin"] == "loggedin" || sessionStorage["user"] == "loggedin") {
+			// redirect to home.html if user is logged in
+			window.open("../webpages/home.html", '_top');
+		}
+	</script>
 	<script type="text/javascript" src="../js/login_check.js"></script>
 	<script type="text/javascript" src="../js/logout.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<title>Login</title>
 </head>
-<body align="center">
+<body align="center" onload="login_check()">
 		Logout Successful!<br>
 		<a href="../index.html">Goto Home</a>
 	<footer>
