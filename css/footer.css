@@ -5,6 +5,7 @@ div {
 }
 
 footer {
+	min-width: 950px;
 	position: absolute;			/*keep footer to the bottom of page*/
 	bottom: -150px;
 	margin: 3px -3px !important;
@@ -15,6 +16,7 @@ footer {
 }
 
 footer>object {
+	min-width: 950px
 	height: 100%;
 	width: 100%;
 }

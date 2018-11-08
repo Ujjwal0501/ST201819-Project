@@ -10,11 +10,8 @@ a:hover {
 
 body {
 	background-color: #cacaca;
-}
-
-.site-name {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2.5em;
+	min-width: 950px;
+	margin: 0px;
 }
 
 .page-container {
@@ -22,8 +19,8 @@ body {
 	min-height: 760px;		/* shift header to bottom */
 }
 
-.page-container>object {
-	/*height: 100%;*/
+.head-wrapper>object {
+	height: 600px;
 	width: 100%;
 }
 
@@ -38,10 +35,6 @@ footer {
 	background-color: #9ba;
 	overflow: hidden;
 }
-
-/*.-orange {
-	background-image: linear-gradient(-143deg, #FA61C2 0%, #F76B1C 100%);
-}*/
 
 footer>object {
 	height: 100%;

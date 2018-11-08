@@ -5,6 +5,7 @@
 body {
 	align-content: center;
 	margin: 6% 0px 0px 0px !important;
+	min-width: 950px;
 }
 
 /*align form to center of the page*/

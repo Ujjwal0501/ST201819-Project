@@ -29,12 +29,11 @@
 		nav {
 			font-family: serif;
 			font-weight: 700;
-			line-height: 1.75em;
 			width: 100%;		/* occupy all of header width */
 			float: left;
 			margin: auto;
 			font-size: 19px;
-			/*background-color: #acb*/
+			/*background-color: rgba(255, 255, 255, 0.70);*/
 			/*background-image: linear-gradient(-143deg, #FA61C2 0%, #F76B1C 100%);*/
 		}
 
@@ -45,18 +44,19 @@
 
 		.card-holder {
 		  position: relative;
-		  height: 3.5em;
-		  background-color: #acb;
+		  height: 3em;
 		  vertical-align: middle;
 		}
 
 		.card-holder:hover .card.-front {
 		  transform: rotateY(-0.5turn);
+		  background-color: rgba(255, 255, 255, 0.90);
 		}
 
 		.card-holder:hover .card.-back {
 		  transform: rotateY(0turn);
-		  background-color: #9ba;
+		  background-color: rgba(255, 255, 255, 0.90);
+
 		  /*background-image: linear-gradient(-144deg, #6AEEC6 0%, #698D28 100%);*/
 		}
 
@@ -65,7 +65,7 @@
 		  transition: transform 0.5s ease;
 		  backface-visibility: hidden;
 		  width: 100%;					/* occupy all of 1/5 part of each nav-link, provides good alignment */
-		  background-color: #acb;
+		  background-color: rgba(255, 255, 255, 0.70);
 		}
 
 		.-flipped {
