@@ -1,0 +1,50 @@
+
+.main-content {
+	width: 80%;
+	padding: 0px 10%;
+	margin: 10% 0px;
+}
+
+.table-wrapper {
+	padding: 0px 10%;
+	width: 80%;
+}
+
+/*align form to center of the page*/
+form {
+	align-items: left;
+	margin: 0 auto !important;
+	width: 60%;
+	min-height: 500px;		/* shift header to bottom */
+}
+
+form div {
+	margin: 30px 0px;
+	width: 100%;
+}
+
+fieldset {
+	border-radius: 10px;
+	min-width: 200px;
+	width: 100%;		/*use all of the form width in fieldset*/
+	text-align: center;
+}
+
+input {
+	height: 2.0em;
+	padding: 3px;
+	border-radius: 5px;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+legend {
+	text-align: left;
+}
+
+/*resize the button for appearance*/
+.button {
+	padding: 10px;
+	height: 35px;
+	width: 110px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../js/sell.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/sell.css">
+	<title>ST201819-Project | Buy</title>
+</head>
+<body align="center">
+	<div class="page-container">
+		<div class="head-wrapper">
+			<object data="../templates/head-banner.html"></object>
+		</div>
+    	<div class="main-content" style="clear: both;">
+    		<!-- <div>Div for any future content</div> -->
+    		<div>
+    			<form action="">
+                    <fieldset>
+                        <legend>Property Details</legend>
+                        <div>
+                            <label for="property-name">Property Name:</label>
+                            <input type="text" name="property-name" placeholder="Name" required autofocus>
+                        </div>
+
+                        <div>
+                            <label for="property-location">Property Location:</label>
+                            <input type="text" name="property-location" placeholder="Location" required>
+                        </div>
+
+                        <div>
+                            <label for="property-price">Property Price:</label>
+                            <input type="number" name="property-price" placeholder="Price" required>
+                        </div>
+
+                        <div>
+                            <label for="seller-name">Name of Seller:</label>
+                            <input type="text" name="seller-name" placeholder="Seller's Name" required>
+                        </div>                        
+
+                        <div>
+                            <input class="button" type="reset" name="submit-sell" value="Sell Property" onclick="local_sell()">
+                        </div>
+                    </fieldset>
+                </form>
+    		</div>
+    	</div>
+	</div>
+	<footer>
+		<object data="../templates/footer.html"></object>
+	</footer>
+</body>
+</html>
