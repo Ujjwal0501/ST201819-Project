@@ -16,6 +16,8 @@ function hide_sold () {
 		if (sessionStorage[i] == "sold") {
 			console.log(i+" sold\n");
 			document.getElementById(''+i).style.display = 'none';
+		} else if (sessionStorage[i] == "added") {
+			document.getElementById(''+i).style.display = 'table-row';
 		}
 	}
 }
