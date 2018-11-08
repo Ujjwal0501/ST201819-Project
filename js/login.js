@@ -6,12 +6,12 @@ function local_login () {
 	if (uname == 'admin' && pass == 'admin123') {
 		// redirect to user page
 		save_user(uname, pass);
-		alert("Admin Login Succussful!");
+		alert("Admin Login Successful!");
 		window.open("../index.html", '_top');
 	} else if (uname == 'user' && pass == 'user123') {
 		// redirect to admin page
 		save_user(uname, pass);
-		alert("User Login Succussful!");
+		alert("User Login Successful!");
 		window.open("../index.html", '_top');
 	} else {
 		alert("Invalid user credentials!!");

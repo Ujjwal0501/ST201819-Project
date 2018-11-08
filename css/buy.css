@@ -1,0 +1,24 @@
+.main-content {
+	width: 80%;
+	padding: 0px 10%;
+	margin: 10% 0px;
+}
+
+.table-wrapper {
+	padding: 0px 10%;
+	width: 80%;
+}
+
+table {
+	width: 100%;
+	padding: 11px;
+}
+
+td {
+	padding: 15px 5px;
+}
+
+.buy-button {
+	padding: 8px;
+	width: 72px;
+}
