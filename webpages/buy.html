@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/buy.css">
 	<title>ST201819-Project | Buy</title>
 </head>
-<body align="center">
+<body align="center" onload="hide_sold()">
 	<div class="page-container">
 		<div class="head-wrapper">
 			<object data="../templates/head-banner.html"></object>
@@ -20,14 +20,16 @@
     				<table class="table" align="center">
     					<thead><tr><td>ID</td><td>Name</td><td>LOCATION</td><td>PRICE</td><td>SELLER</td><td></td></tr></thead>
     					<tbody>
-    						<tr><td>1</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>2</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>3</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>4</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>5</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>6</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>7</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr>
-    						<tr><td>8</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy" class="buy-button" onclick="buy_local()"></td></tr></tbody>
+    						<tr id="1"><td>1</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(1)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="2"><td>2</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(2)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="3"><td>3</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(3)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="4"><td>4</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(4)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="5"><td>5</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(5)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="6"><td>6</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(6)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="7"><td>7</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(7)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="8"><td>8</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(8)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="9" style="display: none;"><td>9</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(9)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr>
+    						<tr id="10" style="display: none;"><td>10</td><td>Shakuntala Apartments</td><td>Near SVNIT</td><td>2.5 Lacs</td><td>Shamu Trader</td><td><input type="submit" name="buy" value="Buy Now" class="buy-button"  onclick="buy_local(10)">&nbsp&nbsp&nbsp<input type="submit" name="buy" value="Show Details" class="buy-button" onclick="show_detail()"></td></tr></tbody>
     				</table>
     			</div>
     		</div>

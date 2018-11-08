@@ -19,6 +19,6 @@ td {
 }
 
 .buy-button {
-	padding: 8px;
-	width: 72px;
+	padding: 8px 16px;
+	/*width: 72px;*/
 }

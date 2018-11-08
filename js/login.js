@@ -20,4 +20,6 @@ function local_login () {
 
 function save_user (uname, pass) {
 	sessionStorage[uname] = "loggedin";
+	// sessionStorage[9] = "sold";
+	// sessionStorage[10] = "sold";
 }
