@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript">
+        if (sessionStorage["admin"] != "loggedin" && sessionStorage["user"] != "loggedin") {
+            if (confirm("You are not logged in!!\nPlease login to add your property for sale.\nDo you want to LOGIN NOW"))
+                window.open("../webpages/login.html", '_top');
+            else window.open("../index.html", '_top');
+        }
+    </script>
 	<script type="text/javascript" src="../js/sell.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet" type="text/css">
