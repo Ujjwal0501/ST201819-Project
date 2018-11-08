@@ -2,6 +2,10 @@
 <html>
 <head>
 	<script type="text/javascript" src="../js/login_check.js"></script>
+	<script type="text/javascript">
+		if (sessionStorage["admin"] != "loggedin" && sessionStorage["user"] != "loggedin")
+			window.open("../index.html", '_top');
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
@@ -10,7 +14,7 @@
 <body align="center">
 	<div class="page-container">
 		<div class="head-wrapper">
-			<object data="./templates/head-banner.html"></object>
+			<object data="../templates/head-banner.html"></object>
 		</div>
     	<div class="main-content" style="clear: both;">
 			<object data="../templates/body-main-content.html"></object>
