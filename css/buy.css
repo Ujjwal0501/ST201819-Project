@@ -5,20 +5,47 @@
 }
 
 .table-wrapper {
-	padding: 0px 10%;
-	width: 80%;
+	padding: 0px 15%;
+	width: 70%;
 }
 
 table {
 	width: 100%;
 	padding: 11px;
+	/*border-collapse: collapse;*/
+}
+
+tr {
+	outline: thin solid;
+	outline-offset: 5px;
+	outline-style: auto;
+}
+
+tr:hover {
+	outline-color: #4f9ff5;
 }
 
 td {
-	padding: 15px 5px;
+	padding: 15px 5px;/*
+	border: 1px solid black;
+	border-radius: 5px;*/
 }
 
 .buy-button {
 	padding: 8px 16px;
-	/*width: 72px;*/
+	width: 60%;
+	margin: 0px 20%;
+}
+
+.buy-button:hover {
+	background-color: #4f9ff5;
+}
+
+tbody {
+	text-align: left;
+}
+
+.sold-out-tag {
+	text-align: center;
+	padding: 8px 0px !important;
 }

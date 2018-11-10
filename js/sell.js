@@ -11,6 +11,7 @@ function local_sell () {
 	sessionStorage["ID"+id] = [name+"", location+"", price+"", sname+""];
 	sessionStorage[id] = "added";
 	sessionStorage["idd"] = id;
-	alert("Your property has been listed for selling with provided details.\nHang on till someone buys it!!")
+	alert("Your property has been listed for selling with provided details.\nYou will be redirected to the buy page.")
+	window.open("./buy.html", '_top');
 	console.log(sessionStorage[id]);
 }

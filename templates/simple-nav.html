@@ -65,11 +65,22 @@
 		}
 
 	</style>
+	<script type="text/javascript">
+		function highlight_bg () {
+			var arr = (window.location.pathname).split('/');
+			console.log(window.parent);
+			var page_name = arr[arr.length - 1].split('.')[0];
+			if (page_name == 'index') page_name = 'home';
+			else if (page_name == 'allproperty') page_name = 'listing';
+			console.log(page_name);
+			document.getElementsByClassName(page_name)[0].style.background = '#ffffff';
+		}
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<!-- <link href="./css/main.css" rel="stylesheet" type="text/css"> -->
 	<!-- <title>ST201819-Project | Ujjwal | Kshitij</title> -->
 </head>
-<body align="center">
+<body align="center" onload="highlight_bg()">
 		<header>
 			<!-- <h1 class="site-name">Property Seller & Lister</h1> -->
 			<nav>
@@ -81,19 +92,19 @@
 					</div>
 				</a>
 				<a target="_top" href="../webpages/buy.html">
-					<div class="card-holder nav-element listings">
+					<div class="card-holder nav-element buy">
 						<div class="card -small -front -orange">
 							<p class="card--text">Buy</p>
 						</div>
 					</div></a> 
 				<a target="_top" href="../webpages/sell.html"> 
-					<div class="card-holder nav-element sold">
+					<div class="card-holder nav-element sell">
 						<div class="card -small -front -orange">
 							<p class="card--text">Sell Property</p>
 						</div>
 					</div></a>
 				<a target="_top" href="../webpages/allproperty.html">
-					<div class="card-holder nav-element onlist">
+					<div class="card-holder nav-element listing">
 						<div class="card -small -front -orange">
 							<p class="card--text">All Listings</p>
 						</div>
