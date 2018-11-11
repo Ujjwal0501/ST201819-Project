@@ -46,8 +46,13 @@ legend {
 	width: 70px;
 }
 
+
 .bgimg {
-    background-image: url('../media/hotel-yellow-light.jpeg');
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../media/logout.jpg');
 }
 
 .tablebg{
