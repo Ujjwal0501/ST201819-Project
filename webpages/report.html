@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../js/buy.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/buy.css">
+	<title>ST201819-Project | Listings</title>
+</head>
+<body align="center" onload="hide_sold()">
+	<div class="page-container">
+		<div class="head-wrapper">
+            <div style="height: 600px; margin-bottom: -600px; background: url('../media/report.jpg'); background-size: cover;"></div>
+			<object id="head" data="../templates/head-banner.html"></object>
+		</div>
+    	<div class="main-content" style="clear: both;">
+    		<!-- <div>Div for any future content</div> -->
+    		<div style="margin-bottom: 50px">
+    			<select style="width: 200px;height: 40px;">
+  					<option value="Sold">Sold Listings</option>
+  					<option value="Unsold">Unsold Listings</option>
+  					<option value="All">All Listings</option>
+				</select>
+    		</div>
+    		<div id="Sold" style="display: ">
+    			<div class="table-wrapper">
+    				<table class="table" align="center" cellspacing="15px">
+    					<caption>PROPERTY DETAILS</caption>
+    					<tbody>
+    						<tr id="1"><td><p>Property ID: 1</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                <td><input type="submit" name="buy" value="Buy Now" id="buy-1" class="buy-button"  onclick="buy_local(1)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="2"><td><p>Property ID: 2</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-2" class="buy-button"  onclick="buy_local(2)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="3"><td><p>Property ID: 3</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-3" class="buy-button"  onclick="buy_local(3)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="4"><td><p>Property ID: 4</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-4" class="buy-button"  onclick="buy_local(4)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="5"><td><p>Property ID: 5</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-5" class="buy-button"  onclick="buy_local(5)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="6"><td><p>Property ID: 6</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-6" class="buy-button"  onclick="buy_local(6)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="7"><td><p>Property ID: 7</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-7" class="buy-button"  onclick="buy_local(7)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="8"><td><p>Property ID: 8</p>
+                                <p>Property Name:Shakuntala Apartments </p>
+                                <p>Property Address: Near SVNIT</p>
+                                <p>Price: 2.5 Lacs</p>
+                                <p>Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-8" class="buy-button"  onclick="buy_local(8)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="9" style="display: none;"><td><p>Property ID: 9</p>
+                                <p id="name9">Property Name: Shakuntala Apartments </p>
+                                <p id="loc9">Property Address: Near SVNIT</p>
+                                <p id="price9">Price: 2.5 Lacs</p>
+                                <p id="sname9">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-9" class="buy-button"  onclick="buy_local(9)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="10" style="display: none;"><td><p>Property ID: 10</p>
+                                <p id="name10">Property Name: Shakuntala Apartments </p>
+                                <p id="loc10">Property Address: Near SVNIT</p>
+                                <p id="price10">Price: 2.5 Lacs</p>
+                                <p id="sname10">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-10" class="buy-button"  onclick="buy_local(10)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="11" style="display: none;"><td><p>Property ID: 11</p>
+                                <p id="name11">Property Name: Shakuntala Apartments </p>
+                                <p id="loc11">Property Address: Near SVNIT</p>
+                                <p id="price11">Price: 2.5 Lacs</p>
+                                <p id="sname11">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-11" class="buy-button"  onclick="buy_local(11)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="12" style="display: none;"><td><p>Property ID: 12</p>
+                                <p id="name12">Property Name: Shakuntala Apartments </p>
+                                <p id="loc12">Property Address: Near SVNIT</p>
+                                <p id="price12">Price: 2.5 Lacs</p>
+                                <p id="sname12">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-12" class="buy-button"  onclick="buy_local(12)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="13" style="display: none;"><td><p>Property ID: 13</p>
+                                <p id="name13">Property Name: Shakuntala Apartments </p>
+                                <p id="loc13">Property Address: Near SVNIT</p>
+                                <p id="price13">Price: 2.5 Lacs</p>
+                                <p id="sname13">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-13" class="buy-button"  onclick="buy_local(13)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="14" style="display: none;"><td><p>Property ID: 14</p>
+                                <p id="name14">Property Name: Shakuntala Apartments </p>
+                                <p id="loc14">Property Address: Near SVNIT</p>
+                                <p id="price14">Price: 2.5 Lacs</p>
+                                <p id="sname14">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-14" class="buy-button"  onclick="buy_local(14)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="15" style="display: none;"><td><p>Property ID: 15</p>
+                                <p id="name15">Property Name: Shakuntala Apartments </p>
+                                <p id="loc15">Property Address: Near SVNIT</p>
+                                <p id="price15">Price: 2.5 Lacs</p>
+                                <p id="sname15">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-15" class="buy-button"  onclick="buy_local(15)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr>
+    						<tr id="16" style="display: table-row;"><td><p>Property ID: 16</p>
+                                <p id="name16">Property Name: Shakuntala Apartments </p>
+                                <p id="loc16">Property Address: Near SVNIT</p>
+                                <p id="price16">Price: 2.5 Lacs</p>
+                                <p id="sname16">Trader's Name: Shamu Trader</p></td>
+                                </td><td><input type="submit" name="buy" value="Buy Now" id="buy-16" class="buy-button"  onclick="buy_local(16)"><p style="background-color: red; color: white" class="sold-out-tag buy-button"> SOLD!</p></td></tr></tbody>
+    				</table>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+	<footer>
+		<object id="footer" data="../templates/footer.html"></object>
+	</footer>
+</body>
+</html>
