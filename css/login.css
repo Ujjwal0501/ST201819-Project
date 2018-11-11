@@ -45,3 +45,11 @@ legend {
 	height: 35px;
 	width: 70px;
 }
+
+.bgimg {
+    background-image: url('../media/hotel-yellow-light.jpeg');
+}
+
+.tablebg{
+	background-color: #ffffff;
+}
