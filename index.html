@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="js/login_check.js"></script>
 	<script type="text/javascript">
-		if (sessionStorage["admin"] == "loggedin" || sessionStorage["user"] == "loggedin") {
+		if (login_check()) {
 			// redirect to home.html if user is logged in
 			window.open("./webpages/home.html", '_top');
 		}

@@ -65,22 +65,15 @@
 		}
 
 	</style>
+	<script src="../js/login_check()"></script>
 	<script type="text/javascript">
-		function highlight_bg () {
-			var arr = (window.location.pathname).split('/');
-			console.log(window.parent);
-			var page_name = arr[arr.length - 1].split('.')[0];
-			if (page_name == 'index') page_name = 'home';
-			else if (page_name == 'allproperty') page_name = 'listing';
-			console.log(page_name);
-			document.getElementsByClassName(page_name)[0].style.background = '#ffffff';
-		}
+		login_check();
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<!-- <link href="./css/main.css" rel="stylesheet" type="text/css"> -->
 	<!-- <title>ST201819-Project | Ujjwal | Kshitij</title> -->
 </head>
-<body align="center" onload="highlight_bg()">
+<body align="center">
 		<br>
 		<header>
 			<!-- <h1 class="site-name">Property Seller & Lister</h1> -->

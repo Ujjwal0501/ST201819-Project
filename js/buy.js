@@ -1,6 +1,6 @@
 
 function buy_local (propertyid) {
-	if (sessionStorage["admin"] != "loggedin" && sessionStorage["user"] != "loggedin") {
+	if (!login_check()) {
 		alert("You are not logged in!!\nThis feature requires a login account.");
 	}
 	else {
@@ -36,4 +36,18 @@ function hide_sold_tag () {
 	for (var i = 0; i < arr.length; i++)
 		arr[i].style.display = 'none';
 
+}
+
+function login_check() {
+	if (sessionStorage["adminstate"] != "loggedin" && sessionStorage["userstate"] != "loggedin") {
+		var arr = sessionStorage["users"].split(",");
+		for (var i = 0; i < arr.length; i++) {
+			if (sessionStorage[arr[i]+"state"] == "loggedin") return true;
+		}
+		if (confirm("You are not logged in!!\nPlease login to add your property for sale.\nDo you want to LOGIN NOW"))
+			window.open("../webpages/login.html", '_top');
+		else window.open("../index.html", '_top');
+	} else {
+		return true;
+	}
 }
