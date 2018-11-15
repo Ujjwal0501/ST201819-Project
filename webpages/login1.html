@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<title>ST201819 - Login</title>
+</head>
+<body align="center" class="bgimg">
+		<form action="">
+			<fieldset class="tablebg">
+				<legend style="padding-top: 30px">Login Details</legend>
+				<div>
+					<label for="user-name">Username:</label>
+					<input type="text" name="user-name" placeholder="Username" required autofocus>
+				</div>
+
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" name="password" placeholder="Password" required>
+				</div>
+
+				<div>
+					<input class="button" type="button" name="login" value="Login" onclick="local_login()">
+				</div>
+				<div>
+					<p><a href="./register.html">New User? Register Here.</a></p>
+				</div>
+			</fieldset>
+		</form>
+</body>
+</html>
