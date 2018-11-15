@@ -27,42 +27,20 @@
             <div style="height: 600px; margin-bottom: -600px; background: url('../media/sell.jpg'); z-index: 10;background-size: cover;background-attachment: fixed;"></div>
 			<object id="head" data="../templates/head-banner.html"></object>
 		</div>
-    	<div class="main-content" style="clear: both;">
-    		<!-- <div>Div for any future content</div> -->
-    		<div>
-    			<form action="">
-                    <fieldset>
-                        <legend>Property Details</legend>
-                        <div>
-                            <label for="property-name">Property Name:</label>
-                            <input type="text" name="property-name" placeholder="Name" required autofocus>
-                        </div>
-
-                        <div>
-                            <label for="property-location">Property Location:</label>
-                            <input type="text" name="property-location" placeholder="Location" required>
-                        </div>
-
-                        <div>
-                            <label for="property-price">Property Price:</label>
-                            <input type="number" name="property-price" placeholder="Price" required>
-                        </div>
-
-                        <div>
-                            <label for="seller-name">Name of Seller:</label>
-                            <input type="text" name="seller-name" placeholder="Seller's Name" required>
-                        </div>                        
-
-                        <div>
-                            <input class="button" type="reset" name="submit-sell" value="Sell Property" onclick="local_sell()">
-                        </div>
-                    </fieldset>
+    	<div class="registerbox">
+                <h1 class="h1">Property Details</h1>
+                <form>
+                    <p>Property Name</p>
+                    <input type="text" name="property-name" placeholder="Enter name" required autofocus>
+                    <p>Property Location</p>
+                    <input type="text" name="property-location" placeholder="Location of the property" required>
+                    <p>Property Rates (in Lacs)</p>
+                    <input type="text" name="property-price" placeholder="Price" required>
+                    <p>Name of Seller</p>
+                    <input type="text" name="seller-name" placeholder="Enter name" required>
+                    <input class="button" type="reset" name="submit-sell" value="Sell Property" onclick="local_sell()">
                 </form>
-    		</div>
-    	</div>
-	</div>
-	<footer>
-		<object id="footer" data="../templates/footer.html"></object>
-	</footer>
+        </div>
+    </div>
 </body>
 </html>
