@@ -30,7 +30,7 @@ footer {
 }
 
 footer>object {
-	min-width: 950px
+	min-width: 950px;
 	height: 100%;
 	width: 100%;
 }
