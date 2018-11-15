@@ -2,39 +2,26 @@
 <html>
 <head>
 	<script type="text/javascript" src="../js/register.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/login_screen.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<title>ST201819 - Register</title>
 </head>
 <body>
-	<form action="./login.html" target="_top">
-			<fieldset>
-				<legend>Registration Details</legend>
-				<div>
-					<label for="full-name">Full Name:</label>
-					<input type="text" name="full-name" placeholder="Full Name" required autofocus>
-				</div>
-
-				<div>
-					<label for="user-name">Username:</label>
-					<input type="text" name="user-name" placeholder="Username" required>
-				</div>
-
-				<div>
-					<label for="password">Password:</label>
-					<input type="password" name="password" placeholder="Password" required>
-				</div>
-
-				<div>
-					<input class="button" type="submit" name="register" value="Register" onclick="local_registration()">
-				</div>
-				<div>
-					<p><a href="./login.html">Already registered? Login Here.</a></p>
-				</div>
-			</fieldset>
-		</form>
-		<footer>
-			<object id="footer" data="../templates/footer.html"></object>
-		</footer>
+	<div class="loginbox">
+        <img src="../media/avatar.png" class="avatar">
+        <h1 class="h1">Register</h1>
+        <form action="./login.html" target="_top">
+            <p>Full Name</p>
+            <input type="text" name="full-name" placeholder="Enter your Name" required autofocus>
+            <p>Username</p>
+            <input type="text" name="user-name" placeholder="Enter your username" required autofocus>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <p>Confirm Password</p>
+            <input type="password" name="cnf-password" placeholder="Confirm Password" required>
+            <input type="button" name="login" value="Register" onclick="local_register()">
+            <a href="./login_screen.html" style="margin-left: 60px" >Already registered? Login Here.</a>
+        </form>
+    </div>
 </body>
 </html>
