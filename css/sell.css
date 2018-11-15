@@ -10,41 +10,79 @@
 	width: 80%;
 }
 
-/*align form to center of the page*/
-form {
-	align-items: left;
-	margin: 0 auto !important;
-	width: 60%;
-	min-height: 500px;		/* shift header to bottom */
+.registerbox{
+    width: 520px;
+    height: 420px;
+    background: #ffffff;
+    color: black;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+	padding: 70px 30px;
+	margin-top: 250px;
 }
 
-form div {
-	margin: 30px 0px;
-	width: 100%;
+.h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
 }
 
-fieldset {
-	border-radius: 10px;
-	min-width: 200px;
-	width: 100%;		/*use all of the form width in fieldset*/
-	text-align: center;
+.registerbox p{
+	margin: 0;
+	margin-bottom: 20px;
+    padding: 0;
+    color: rgb(15, 131, 131);
 }
 
-input {
-	height: 2.0em;
-	padding: 3px;
-	border-radius: 5px;
-	border-color: #000000;
-	border-width: 1px;
+.registerbox input{
+    width: 100%;
+    margin-bottom: 20px;
+
 }
 
-legend {
-	text-align: left;
+.registerbox input[type="text"]
+{
+    border: none;
+    border-bottom: 0.5px solid #000;
+    background: transparent;
+    height: 40px;
+    color: #000;
+	font-size: 16px;
+	margin-bottom: 20px;
 }
 
-/*resize the button for appearance*/
-.button {
-	padding: 10px;
-	height: 35px;
-	width: 110px;
+.registerbox input[type="reset"]
+{
+    border: none;
+    height: 40px;
+    background: cadetblue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.registerbox input[type="reset"]:hover
+{
+    cursor: pointer;
+    background:cornflowerblue;
+    color: #000;
+}
+
+.registerbox a
+{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkcyan;
+    justify-content: center;
+}
+
+.registerbox a :hover
+{
+    color: #ffc107;
 }
