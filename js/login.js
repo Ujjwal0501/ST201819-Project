@@ -19,9 +19,10 @@ function local_login () {
 		alert("User Login Successful!");
 		window.open("../index.html", '_top');
 	} else if (sessionStorage[""+uname]) {
-		if (sessionStorage[""+uname] == pass) {
+		if (sessionStorage[""+uname+"password"] == pass) {
 			save_user(uname, pass);
 			alert("User Login Successful!");
+			window.open("../index.html", '_top')
 		} else {
 			alert("Invalid User credentials!!")
 		}
@@ -32,7 +33,7 @@ function local_login () {
 }
 
 function save_user (uname, pass) {
-	sessionStorage[uname] = "loggedin";
+	sessionStorage[uname+"state"] = "loggedin";
 	// sessionStorage[9] = "sold";
 	// sessionStorage[10] = "sold";
 }
