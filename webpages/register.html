@@ -2,12 +2,11 @@
 <html>
 <head>
 	<script type="text/javascript" src="../js/register.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/login_screen.css">
-	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/register_screen.css">
 	<title>ST201819 - Register</title>
 </head>
-<body>
-	<div class="loginbox">
+<body style="background-size: cover;">
+	<div class="registerbox">
         <img src="../media/avatar.png" class="avatar">
         <h1 class="h1">Register</h1>
         <form action="#" target="_top">
@@ -19,8 +18,8 @@
             <input type="password" name="password" placeholder="Enter Password" required>
             <p>Confirm Password</p>
             <input type="password" name="cnf-password" placeholder="Confirm Password" required>
-            <input type="button" name="login" value="Register" onclick="local_registration()">
-            <a href="./login.html" style="margin-left: 60px" >Already registered? Login Here.</a>
+            <input type="submit" name="login" value="Register" onclick="local_registration()">
+            <a href="./login.html" style="margin-left: 92px" >Already registered? Login Here.</a>
         </form>
     </div>
 </body>
