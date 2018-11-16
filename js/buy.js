@@ -42,9 +42,11 @@ function hide_sold_tag () {
 
 function login_check() {
 	if (sessionStorage["adminstate"] != "loggedin" && sessionStorage["userstate"] != "loggedin") {
-		var arr = sessionStorage["users"].split(",");
-		for (var i = 0; i < arr.length; i++) {
-			if (sessionStorage[arr[i]+"state"] == "loggedin") return true;
+		if (sessionStorage["users"]) {
+			var arr = sessionStorage["users"].split(",");
+			for (var i = 0; i < arr.length; i++) {
+				if (sessionStorage[arr[i]+"state"] == "loggedin") return true;
+			}
 		}
 		return false;
 	} else {

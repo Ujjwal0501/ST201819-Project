@@ -18,7 +18,7 @@ function local_login () {
 		save_user(uname, pass);
 		alert("User Login Successful!");
 		window.open("../index.html", '_top');
-	} else if (sessionStorage[""+uname]) {
+	} else if (sessionStorage[""+uname+"password"]) {
 		if (sessionStorage[""+uname+"password"] == pass) {
 			save_user(uname, pass);
 			alert("User Login Successful!");
